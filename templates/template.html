@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="" method="post">
+
+<select>
+
+
+{% for element in mystudents %}
+
+
+<option value={{ element.email }}>{{ element.email }}
+
+{% endfor %}
+
+{% for element in myteachers %}
+
+
+<option value={{ element.email }}>{{ element.email }}
+
+{% endfor %}
+
+
+     </select>
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>

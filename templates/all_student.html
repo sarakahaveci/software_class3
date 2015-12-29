@@ -1,0 +1,12 @@
+<html>
+<head>
+    <title>Students</title>
+</head> 
+<body>
+ <h1>Students</h1>
+ <ul> {% for Students in Students_list %} 
+    <li>{{ Students.first_name }}, {{ Students.last_name }}, {{ Students.email }}</li> 
+{% endfor %} 
+</ul> 
+</body>
+</html>
